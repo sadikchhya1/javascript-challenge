@@ -12,7 +12,7 @@ function showData(data) {
         Object.values(obj).forEach(val => {
             var cell = row.append('td');
             cell.text(val)
-        })
+        });
     });
 };
 
@@ -22,4 +22,4 @@ button.on('click', () => {
     var filterData = data.filter(obj => obj.datetime == date);
 
     showData(filterData);
-})
+});
